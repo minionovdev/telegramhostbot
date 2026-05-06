@@ -39,41 +39,17 @@
                 radial-gradient(ellipse at 80% 20%, rgba(255, 71, 87, 0.05) 0%, transparent 50%),
                 radial-gradient(ellipse at 50% 80%, rgba(46, 213, 115, 0.04) 0%, transparent 50%);
         }
-        .header {
-            background: rgba(19, 19, 43, 0.8); backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border); padding: 16px 0;
-            position: sticky; top: 0; z-index: 1000;
-        }
-        .header-inner {
-            max-width: 1200px; margin: 0 auto; padding: 0 24px;
-            display: flex; justify-content: space-between; align-items: center;
-        }
-        .logo {
-            font-size: 26px; font-weight: 800;
-            background: linear-gradient(135deg, #6c5ce7, #a29bfe, #fd79a8);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-            letter-spacing: -0.5px;
-        }
+        /* Все стили прежние, но добавлены новые для прогресса */
+        .header { background: rgba(19, 19, 43, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 16px 0; position: sticky; top: 0; z-index: 1000; }
+        .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 26px; font-weight: 800; background: linear-gradient(135deg, #6c5ce7, #a29bfe, #fd79a8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.5px; }
         .nav-links { display: flex; gap: 8px; align-items: center; }
-        .nav-links a, .nav-links button {
-            color: var(--subtext); text-decoration: none; padding: 8px 18px;
-            border-radius: 10px; font-weight: 500; font-size: 14px; cursor: pointer;
-            transition: all 0.2s; border: none; background: transparent; font-family: inherit;
-        }
-        .nav-links a:hover, .nav-links button:hover {
-            color: var(--text); background: rgba(255,255,255,0.05);
-        }
+        .nav-links a, .nav-links button { color: var(--subtext); text-decoration: none; padding: 8px 18px; border-radius: 10px; font-weight: 500; font-size: 14px; cursor: pointer; transition: all 0.2s; border: none; background: transparent; font-family: inherit; }
+        .nav-links a:hover, .nav-links button:hover { color: var(--text); background: rgba(255,255,255,0.05); }
         .nav-links a.active { color: #fff; background: rgba(108,92,231,0.2); }
 
-        .btn {
-            display: inline-block; padding: 12px 28px; border-radius: 12px;
-            border: none; font-weight: 600; font-size: 15px; cursor: pointer;
-            transition: all 0.2s; font-family: inherit; text-decoration: none; text-align: center;
-        }
-        .btn-primary {
-            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
-            color: #fff; box-shadow: 0 4px 20px rgba(108,92,231,0.3);
-        }
+        .btn { display: inline-block; padding: 12px 28px; border-radius: 12px; border: none; font-weight: 600; font-size: 15px; cursor: pointer; transition: all 0.2s; font-family: inherit; text-decoration: none; text-align: center; }
+        .btn-primary { background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: #fff; box-shadow: 0 4px 20px rgba(108,92,231,0.3); }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(108,92,231,0.5); }
         .btn-outline { background: transparent; border: 2px solid rgba(255,255,255,0.2); color: #fff; }
         .btn-outline:hover { border-color: var(--primary); background: rgba(108,92,231,0.1); }
@@ -84,12 +60,7 @@
         .container { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
 
         .hero { text-align: center; padding: 80px 0 60px; }
-        .hero h1 {
-            font-size: 56px; font-weight: 800;
-            background: linear-gradient(135deg, #fff, #a29bfe, #fd79a8);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-            line-height: 1.1; margin-bottom: 24px;
-        }
+        .hero h1 { font-size: 56px; font-weight: 800; background: linear-gradient(135deg, #fff, #a29bfe, #fd79a8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.1; margin-bottom: 24px; }
         .hero p { font-size: 18px; color: var(--subtext); max-width: 600px; margin: 0 auto 40px; line-height: 1.7; }
         .hero-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
@@ -101,66 +72,35 @@
 
         .form-group { margin-bottom: 20px; }
         .form-group label { display: block; margin-bottom: 8px; font-weight: 500; font-size: 14px; color: var(--subtext); }
-        .form-group input, .form-group textarea {
-            width: 100%; padding: 14px 16px; border-radius: 12px;
-            background: rgba(255,255,255,0.03); border: 1px solid var(--border);
-            color: #fff; font-size: 15px; font-family: inherit; outline: none; transition: border 0.2s;
-        }
+        .form-group input, .form-group textarea { width: 100%; padding: 14px 16px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: #fff; font-size: 15px; font-family: inherit; outline: none; transition: border 0.2s; }
         .form-group input:focus, .form-group textarea:focus { border-color: var(--primary); }
-        .editor-container {
-            width: 100%;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid var(--border);
-            background: #272822;
-        }
+        .editor-container { width: 100%; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: #272822; }
         .editor-container:focus-within { border-color: var(--primary); }
 
         .dashboard-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; flex-wrap: wrap; gap: 16px; }
         .dashboard-header h2 { font-size: 32px; }
         .bot-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
-        .bot-card {
-            background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
-            padding: 24px; box-shadow: var(--shadow); transition: all 0.3s; position: relative; overflow: hidden;
-        }
-        .bot-card::before {
-            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px;
-            background: linear-gradient(90deg, var(--primary), #fd79a8); opacity: 0; transition: opacity 0.3s;
-        }
+        .bot-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); transition: all 0.3s; position: relative; overflow: hidden; }
+        .bot-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--primary), #fd79a8); opacity: 0; transition: opacity 0.3s; }
         .bot-card:hover::before { opacity: 1; }
         .bot-card:hover { border-color: rgba(108,92,231,0.3); transform: translateY(-2px); }
         .bot-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
         .bot-name { font-size: 18px; font-weight: 700; }
-        .status-badge {
-            padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700;
-            text-transform: uppercase; letter-spacing: 0.5px;
-        }
+        .status-badge { padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
         .status-running { background: rgba(46,213,115,0.2); color: var(--success); }
         .status-stopped { background: rgba(255,71,87,0.2); color: var(--danger); }
         .bot-info { color: var(--subtext); font-size: 13px; margin-bottom: 6px; word-break: break-all; }
         .bot-info strong { color: var(--text); }
         .bot-actions { display: flex; gap: 8px; margin-top: 20px; flex-wrap: wrap; }
 
-        .modal-overlay {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center;
-            z-index: 2000; backdrop-filter: blur(4px);
-        }
-        .modal {
-            background: var(--card); border: 1px solid var(--border); border-radius: 20px;
-            padding: 32px; width: 95%; max-height: 85vh; overflow-y: auto;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-        }
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; z-index: 2000; backdrop-filter: blur(4px); }
+        .modal { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 32px; width: 95%; max-height: 85vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.6); }
         .modal.create-bot-modal { max-width: 700px; }
         .modal.update-code-modal { max-width: 800px; }
         .modal h3 { margin-bottom: 24px; font-size: 22px; }
         .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 24px; }
 
-        .toast {
-            position: fixed; bottom: 24px; right: 24px; padding: 16px 24px;
-            border-radius: 12px; color: #fff; font-weight: 600; z-index: 3000;
-            animation: slideUp 0.3s ease; box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-        }
+        .toast { position: fixed; bottom: 24px; right: 24px; padding: 16px 24px; border-radius: 12px; color: #fff; font-weight: 600; z-index: 3000; animation: slideUp 0.3s ease; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
         @keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
         .toast-success { background: var(--success); color: #000; }
         .toast-error { background: var(--danger); }
@@ -182,11 +122,24 @@
             .bot-grid { grid-template-columns: 1fr; }
         }
         .ace_editor { font-size: 14px !important; border-radius: 0 0 12px 12px; }
+
+        /* Стили для прогресса деплоя и сообщений об ошибках */
+        .progress-steps { background: rgba(255,255,255,0.03); border-radius: 12px; padding: 16px; margin-top: 16px; }
+        .progress-step { display: flex; align-items: center; margin-bottom: 10px; font-size: 14px; }
+        .progress-step .indicator { width: 24px; height: 24px; border-radius: 50%; margin-right: 12px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 14px; }
+        .step-pending { background: var(--border); }
+        .step-running { background: var(--primary); animation: pulse 1s infinite; }
+        .step-success { background: var(--success); color: #000; }
+        .step-error { background: var(--danger); }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+
+        .error-details { background: rgba(255,71,87,0.1); border: 1px solid var(--danger); border-radius: 12px; padding: 16px; margin-top: 12px; }
+        .error-details code { background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px; }
     </style>
 </head>
 <body>
 
-<!-- Header -->
+<!-- Header (прежний) -->
 <header class="header">
     <div class="header-inner">
         <div class="logo">🤖 TGBotHost</div>
@@ -204,17 +157,17 @@
 <div class="container" id="pageHome">
     <div class="hero">
         <h1>Бесплатный хостинг<br>Telegram ботов 24/7</h1>
-        <p>Создавайте, обновляйте и управляйте своими Telegram ботами. Загрузите код, укажите токен — и бот работает круглосуточно на GitHub Actions. Никаких серверов, только ваш аккаунт GitHub.</p>
+        <p>Создайте бота всего за 2 шага: вставьте код и API-токен. Мы автоматически настроим GitHub Actions, и бот будет работать круглосуточно. Ошибки? Вы получите понятный совет.</p>
         <div class="hero-buttons">
             <button class="btn btn-primary" onclick="navigate('register')">🚀 Начать бесплатно</button>
             <button class="btn btn-outline" onclick="navigate('login')">Уже есть аккаунт</button>
         </div>
     </div>
     <div class="features-grid">
-        <div class="feature-item"><div class="feature-icon">⚡</div><h4>Мгновенный запуск</h4><p style="color:var(--subtext);font-size:13px;">Бот стартует через 2 минуты после деплоя</p></div>
-        <div class="feature-item"><div class="feature-icon">🔄</div><h4>Обновление кода</h4><p style="color:var(--subtext);font-size:13px;">Меняйте код бота в любое время</p></div>
-        <div class="feature-item"><div class="feature-icon">⏯️</div><h4>Запуск / Стоп</h4><p style="color:var(--subtext);font-size:13px;">Полный контроль над работой бота</p></div>
-        <div class="feature-item"><div class="feature-icon">🔐</div><h4>Приватность</h4><p style="color:var(--subtext);font-size:13px;">Бот в вашем приватном репозитории</p></div>
+        <div class="feature-item"><div class="feature-icon">⚡</div><h4>Мгновенный запуск</h4><p style="color:var(--subtext);font-size:13px;">Бот стартует через 2 минуты</p></div>
+        <div class="feature-item"><div class="feature-icon">🛡️</div><h4>Автопроверка</h4><p style="color:var(--subtext);font-size:13px;">Токен и код проверяются до деплоя</p></div>
+        <div class="feature-item"><div class="feature-icon">💡</div><h4>Понятные ошибки</h4><p style="color:var(--subtext);font-size:13px;">Подскажем, что исправить</p></div>
+        <div class="feature-item"><div class="feature-icon">🔐</div><h4>Приватность</h4><p style="color:var(--subtext);font-size:13px;">Ваш репозиторий, ваш код</p></div>
     </div>
 </div>
 
@@ -227,11 +180,7 @@
             <div class="form-group"><label>👤 Никнейм</label><input type="text" id="regNickname" placeholder="telegram_master" required minlength="3" maxlength="20"></div>
             <div class="form-group"><label>📧 Email</label><input type="email" id="regEmail" placeholder="you@example.com" required></div>
             <div class="form-group"><label>🔑 Пароль</label><input type="password" id="regPassword" placeholder="Минимум 6 символов" required minlength="6"></div>
-            <div class="form-group">
-                <label>🔑 GitHub Token (права repo и workflow)</label>
-                <input type="password" id="regGithubToken" placeholder="ghp_..." required>
-                <small style="color:var(--subtext);"><a href="https://github.com/settings/tokens/new?scopes=repo,workflow&description=TGBotHost" target="_blank" style="color:var(--primary);">Создать токен</a></small>
-            </div>
+            <div class="form-group"><label>🔑 GitHub Token (права repo и workflow)</label><input type="password" id="regGithubToken" placeholder="ghp_..." required><small style="color:var(--subtext);"><a href="https://github.com/settings/tokens/new?scopes=repo,workflow&description=TGBotHost" target="_blank" style="color:var(--primary);">Создать токен</a></small></div>
             <button type="submit" class="btn btn-primary" style="width:100%;">Зарегистрироваться</button>
         </form>
         <p class="text-center mt-16" style="color:var(--subtext);">Уже есть аккаунт? <a onclick="navigate('login')" style="color:var(--primary);cursor:pointer;">Войти</a></p>
@@ -273,15 +222,18 @@
             <div class="form-group">
                 <label>📝 Код бота (Python)</label>
                 <div class="editor-container" id="createEditorContainer" style="height: 350px;"></div>
+                <button type="button" class="btn btn-sm btn-outline mt-16" onclick="checkCodeInEditor('create')">🔍 Проверить код</button>
             </div>
             <div class="form-group"><label>🔑 Telegram Bot Token</label><input type="password" id="botToken" placeholder="123456:ABC-DEF..." required></div>
-            <div class="form-group"><label>📢 ID канала (если нужно)</label><input type="text" id="botChannelId" placeholder="-1001234567890"></div>
-            <div class="form-group"><label>👑 ID администраторов (через запятую)</label><input type="text" id="botAdmins" placeholder="123456789,987654321"></div>
+            <div class="form-group"><label>📢 ID канала (опционально)</label><input type="text" id="botChannelId" placeholder="-1001234567890"></div>
+            <div class="form-group"><label>👑 ID администраторов (через запятую, опционально)</label><input type="text" id="botAdmins" placeholder="123456789,987654321"></div>
             <div class="modal-actions">
                 <button type="button" class="btn btn-outline" onclick="closeCreateBotModal()">Отмена</button>
                 <button type="submit" class="btn btn-primary">Создать и запустить</button>
             </div>
         </form>
+        <!-- Блок прогресса деплоя (скрыт) -->
+        <div id="deployProgress" class="progress-steps hidden"></div>
     </div>
 </div>
 
@@ -294,6 +246,7 @@
             <div class="form-group">
                 <label>Код бота</label>
                 <div class="editor-container" id="updateEditorContainer" style="height: 400px;"></div>
+                <button type="button" class="btn btn-sm btn-outline mt-16" onclick="checkCodeInEditor('update')">🔍 Проверить код</button>
             </div>
             <div class="modal-actions">
                 <button type="button" class="btn btn-outline" onclick="closeUpdateCodeModal()">Отмена</button>
@@ -311,18 +264,11 @@
     const STORAGE_KEY = 'tgbothost_data';
     let appState = { users: {}, currentUser: null, currentPage: 'home' };
 
-    function loadState() {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved) { try { appState = JSON.parse(saved); } catch(e) {} }
-    }
+    function loadState() { const saved = localStorage.getItem(STORAGE_KEY); if (saved) { try { appState = JSON.parse(saved); } catch(e) {} } }
     function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(appState)); }
 
     // ================= Navigation =================
-    function navigate(page) {
-        appState.currentPage = page;
-        saveState();
-        renderPage();
-    }
+    function navigate(page) { appState.currentPage = page; saveState(); renderPage(); }
 
     function renderPage() {
         ['pageHome','pageRegister','pageLogin','pageDashboard'].forEach(id => document.getElementById(id).classList.add('hidden'));
@@ -352,10 +298,8 @@
         const email = document.getElementById('regEmail').value.trim();
         const password = document.getElementById('regPassword').value.trim();
         const githubToken = document.getElementById('regGithubToken').value.trim();
-
         if (appState.users[nickname]) { showToast('Никнейм занят','error'); return; }
         if (!githubToken) { showToast('Введите GitHub токен','error'); return; }
-
         appState.users[nickname] = { nickname, email, password, githubToken, bots: {}, createdAt: new Date().toISOString() };
         appState.currentUser = nickname;
         saveState();
@@ -375,12 +319,7 @@
         navigate('dashboard');
     }
 
-    function logout() {
-        appState.currentUser = null;
-        saveState();
-        showToast('Вы вышли','info');
-        navigate('home');
-    }
+    function logout() { appState.currentUser = null; saveState(); showToast('Вы вышли','info'); navigate('home'); }
 
     // ================= Helpers =================
     function getCurrentUser() { return appState.currentUser ? appState.users[appState.currentUser] : null; }
@@ -421,65 +360,66 @@
         createEditor = ace.edit(container);
         createEditor.setTheme('ace/theme/monokai');
         createEditor.session.setMode('ace/mode/python');
-        createEditor.setOptions({
-            fontSize: '14px',
-            showPrintMargin: false,
-            enableBasicAutocompletion: true,
-            enableLiveAutocompletion: true,
-            tabSize: 4,
-            useSoftTabs: true
-        });
-        createEditor.setValue(`# Ваш код бота здесь\nimport os\nimport asyncio\nfrom aiogram import Bot, Dispatcher\n\nBOT_TOKEN = os.getenv("BOT_TOKEN")\n\nasync def main():\n    bot = Bot(token=BOT_TOKEN)\n    dp = Dispatcher()\n    # ... ваша логика\n\nif __name__ == "__main__":\n    asyncio.run(main())`);
+        createEditor.setOptions({ fontSize: '14px', showPrintMargin: false, enableBasicAutocompletion: true, enableLiveAutocompletion: true, tabSize: 4, useSoftTabs: true });
+        createEditor.setValue(`# Ваш код бота\nimport os\nimport asyncio\nfrom aiogram import Bot, Dispatcher\n\nBOT_TOKEN = os.getenv("BOT_TOKEN")\n\nasync def main():\n    bot = Bot(token=BOT_TOKEN)\n    dp = Dispatcher()\n    # ... ваша логика\n\nif __name__ == "__main__":\n    asyncio.run(main())`);
         createEditor.clearSelection();
     }
 
-    function destroyCreateEditor() {
-        if (createEditor) {
-            createEditor.destroy();
-            createEditor = null;
-        }
-    }
+    function destroyCreateEditor() { if (createEditor) { createEditor.destroy(); createEditor = null; } }
 
     function initUpdateEditor(code) {
-        if (updateEditor) {
-            updateEditor.setValue(code);
-            updateEditor.clearSelection();
-            return;
-        }
+        if (updateEditor) { updateEditor.setValue(code); updateEditor.clearSelection(); return; }
         const container = document.getElementById('updateEditorContainer');
         updateEditor = ace.edit(container);
         updateEditor.setTheme('ace/theme/monokai');
         updateEditor.session.setMode('ace/mode/python');
-        updateEditor.setOptions({
-            fontSize: '14px',
-            showPrintMargin: false,
-            enableBasicAutocompletion: true,
-            enableLiveAutocompletion: true,
-            tabSize: 4,
-            useSoftTabs: true
-        });
+        updateEditor.setOptions({ fontSize: '14px', showPrintMargin: false, enableBasicAutocompletion: true, enableLiveAutocompletion: true, tabSize: 4, useSoftTabs: true });
         updateEditor.setValue(code || '# ваш код');
         updateEditor.clearSelection();
     }
 
-    function destroyUpdateEditor() {
-        if (updateEditor) {
-            updateEditor.destroy();
-            updateEditor = null;
+    function destroyUpdateEditor() { if (updateEditor) { updateEditor.destroy(); updateEditor = null; } }
+
+    // ================= Проверка кода =================
+    function checkCodeInEditor(type) {
+        const editor = type === 'create' ? createEditor : updateEditor;
+        if (!editor) { showToast('Редактор не инициализирован','error'); return; }
+        const code = editor.getValue();
+        const checks = [];
+        if (!code.includes('BOT_TOKEN = os.getenv("BOT_TOKEN")')) checks.push('❌ Отсутствует обязательная строка: BOT_TOKEN = os.getenv("BOT_TOKEN"). Добавьте её.');
+        if (code.includes('os.getenv') && !code.includes('BOT_TOKEN')) checks.push('⚠️ Вы используете os.getenv, но не для BOT_TOKEN. Убедитесь, что токен берется из переменной окружения.');
+        if (checks.length === 0) {
+            showToast('✅ Код выглядит корректно', 'success');
+        } else {
+            showToast(checks.join('\n'), 'error');
         }
     }
 
-    // ================= Модалки =================
+    // ================= Валидация токена Telegram =================
+    async function verifyBotToken(token) {
+        try {
+            const resp = await fetch(`https://api.telegram.org/bot${token}/getMe`);
+            const data = await resp.json();
+            if (!data.ok) throw new Error(data.description || 'Неверный токен');
+            return data.result.username;
+        } catch (e) {
+            throw new Error('Ошибка проверки токена Telegram: ' + e.message);
+        }
+    }
+
+    // ================= Модалки создания =================
     function openCreateBotModal() {
         const user = getCurrentUser(); if (!user) { showToast('Войдите','error'); return; }
         if (getBotCount() >= 3) { showToast('Лимит 3 бота','error'); return; }
         document.getElementById('createBotModal').classList.remove('hidden');
+        document.getElementById('deployProgress').classList.add('hidden');
         setTimeout(initCreateEditor, 50);
     }
 
     function closeCreateBotModal() {
         document.getElementById('createBotModal').classList.add('hidden');
         destroyCreateEditor();
+        document.getElementById('deployProgress').classList.add('hidden');
     }
 
     async function handleCreateBot(e) {
@@ -495,103 +435,106 @@
 
         if (!botName || !botCode || !botToken) { showToast('Заполните обязательные поля','error'); return; }
 
-        const botId = 'bot_'+Date.now();
-        const repoName = `tg-bot-${botName.toLowerCase().replace(/[^a-z0-9]/g,'-')}-${Date.now()}`;
-        user.bots[botId] = {
-            name: botName, code: botCode, token: botToken, channelId, admins,
-            repoName, repoFullName: '', status: 'stopped', createdAt: new Date().toISOString()
+        // Показываем прогресс
+        const progressDiv = document.getElementById('deployProgress');
+        progressDiv.classList.remove('hidden');
+        progressDiv.innerHTML = `
+            <div class="progress-step" id="step1"><span class="indicator step-running">⏳</span> Проверка токена...</div>
+            <div class="progress-step" id="step2"><span class="indicator step-pending">⬜</span> Создание репозитория</div>
+            <div class="progress-step" id="step3"><span class="indicator step-pending">⬜</span> Добавление секрета</div>
+            <div class="progress-step" id="step4"><span class="indicator step-pending">⬜</span> Загрузка кода</div>
+        `;
+
+        const updateStep = (step, status, text) => {
+            const el = document.getElementById('step'+step);
+            if (el) el.innerHTML = `<span class="indicator step-${status}">${status==='success'?'✅':status==='error'?'❌':'⏳'}</span> ${text}`;
         };
-        saveState();
-        closeCreateBotModal();
-        showToast('Создаю репозиторий и деплою бота...', 'info');
 
         try {
+            // Шаг 1: Проверка токена
+            const botUsername = await verifyBotToken(botToken);
+            updateStep(1, 'success', `Токен действителен (@${botUsername})`);
+
+            // Шаг 2: Создание репозитория и деплой (внутри обработка ошибок)
+            updateStep(2, 'running', 'Создание репозитория...');
+            const repoName = `tg-bot-${botName.toLowerCase().replace(/[^a-z0-9]/g,'-')}-${Date.now()}`;
             const repoFullName = await deployToGitHub(user.githubToken, repoName, botCode, botToken);
-            user.bots[botId].repoFullName = repoFullName;
-            user.bots[botId].status = 'running';
+            updateStep(2, 'success', `Репозиторий ${repoFullName}`);
+            updateStep(3, 'success', 'Секрет BOT_TOKEN добавлен');
+            updateStep(4, 'success', 'Код загружен, GitHub Actions настроен');
+
+            // Сохраняем бота
+            const botId = 'bot_'+Date.now();
+            user.bots[botId] = {
+                name: botName, code: botCode, token: botToken, channelId, admins,
+                repoName, repoFullName, status: 'running', createdAt: new Date().toISOString()
+            };
             saveState();
-            showToast(`Бот "${botName}" запущен! Репо: ${repoFullName}`,'success');
+            showToast(`Бот "${botName}" успешно запущен! Репо: ${repoFullName}`,'success');
+            setTimeout(() => { closeCreateBotModal(); renderDashboard(); }, 2000);
         } catch (err) {
-            showToast(`Ошибка деплоя: ${err.message}`,'error');
+            // Ошибку показываем в прогресс-блоке и даём совет
+            const errorMessage = err.message;
+            let friendlyMessage = errorMessage;
+            let advice = '';
+
+            if (errorMessage.includes('Bad credentials')) advice = 'Неверный GitHub токен. Проверьте его в профиле или создайте новый с правами repo и workflow.';
+            else if (errorMessage.includes('Repository creation failed') || errorMessage.includes('name already exists')) advice = 'Репозиторий с таким именем уже существует. Попробуйте изменить название бота.';
+            else if (errorMessage.includes('key_id')) advice = 'Ошибка шифрования секрета. Обновите страницу и попробуйте снова.';
+            else if (errorMessage.includes('Forbidden')) advice = 'Нет доступа. Убедитесь, что GitHub токен имеет права repo и workflow.';
+            else if (errorMessage.includes('NetworkError')) advice = 'Проблема с сетью. Проверьте интернет-соединение.';
+            else advice = 'Неизвестная ошибка. Попробуйте позже или свяжитесь с поддержкой.';
+
+            progressDiv.innerHTML += `<div class="error-details">
+                <strong>❌ Ошибка:</strong> ${friendlyMessage}<br>
+                <strong>💡 Как исправить:</strong> ${advice}
+            </div>`;
+            updateStep(1, 'error', 'Ошибка');
+            // Скрываем модалку не сразу, чтобы пользователь прочитал
         }
-        renderDashboard();
     }
 
-    // --- Update Code ---
-    let currentUpdateBotId = null;
-
-    function openUpdateCodeModal(botId) {
-        const user = getCurrentUser(); if(!user?.bots[botId]) return;
-        currentUpdateBotId = botId;
-        document.getElementById('updateCodeModal').classList.remove('hidden');
-        setTimeout(() => {
-            initUpdateEditor(user.bots[botId].code);
-        }, 50);
-    }
-
-    function closeUpdateCodeModal() {
-        document.getElementById('updateCodeModal').classList.add('hidden');
-        destroyUpdateEditor();
-        currentUpdateBotId = null;
-    }
-
-    function handleUpdateCode(e) {
-        e.preventDefault();
-        const user = getCurrentUser(); if(!user||!currentUpdateBotId) return;
-        const newCode = updateEditor ? updateEditor.getValue() : '';
-        if(!newCode) { showToast('Код не может быть пустым','error'); return; }
-        user.bots[currentUpdateBotId].code = newCode;
-        saveState();
-        closeUpdateCodeModal();
-        renderDashboard();
-        showToast('Код бота обновлён!','success');
-    }
-
-    // ================= GitHub Deploy =================
+    // ================= GitHub Deploy (с улучшенной обработкой ошибок) =================
     async function deployToGitHub(githubToken, repoName, botCode, botToken) {
         const api = async (url, opts={}) => {
-            const res = await fetch(`https://api.github.com${url}`, {
-                headers: { Authorization: `token ${githubToken}`, 'Content-Type':'application/json', Accept:'application/vnd.github.v3+json' },
-                ...opts
-            });
-            if (!res.ok) { const err = await res.json(); throw new Error(err.message || 'GitHub API error'); }
+            let res;
+            try {
+                res = await fetch(`https://api.github.com${url}`, {
+                    headers: { Authorization: `token ${githubToken}`, 'Content-Type':'application/json', Accept:'application/vnd.github.v3+json' },
+                    ...opts
+                });
+            } catch (networkError) {
+                throw new Error('NetworkError: Нет связи с GitHub. Проверьте интернет.');
+            }
+            if (!res.ok) {
+                const err = await res.json().catch(() => ({}));
+                const msg = err.message || `Ошибка ${res.status}`;
+                if (res.status === 401) throw new Error('Bad credentials: Неверный GitHub токен.');
+                if (res.status === 403) throw new Error('Forbidden: Недостаточно прав у токена.');
+                if (res.status === 422) throw new Error(`Ошибка валидации: ${msg}`);
+                throw new Error(msg);
+            }
             return res.status === 204 ? null : res.json();
         };
 
+        // Создание репозитория
         await api('/user/repos', { method:'POST', body: JSON.stringify({ name: repoName, private: true, auto_init: false }) });
         const userData = await api('/user');
         const owner = userData.login;
         const repoFullName = `${owner}/${repoName}`;
 
+        // Шифрование секрета
         const pubKeyData = await api(`/repos/${owner}/${repoName}/actions/secrets/public-key`);
         const publicKey = pubKeyData.key;
         const keyId = pubKeyData.key_id;
-
         const encryptedValue = encryptSecret(publicKey, botToken);
         await api(`/repos/${owner}/${repoName}/actions/secrets/BOT_TOKEN`, {
             method:'PUT',
             body: JSON.stringify({ encrypted_value: encryptedValue, key_id: keyId })
         });
 
-        const workflowContent = `name: Telegram Bot
-on:
-  schedule:
-    - cron: '*/2 * * * *'
-  workflow_dispatch:
-jobs:
-  run:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - run: pip install aiogram aiohttp
-      - name: Run bot
-        env:
-          BOT_TOKEN: \${{ secrets.BOT_TOKEN }}
-        run: python bot.py
-`;
+        // Загрузка файлов
+        const workflowContent = `name: Telegram Bot\non:\n  schedule:\n    - cron: '*/2 * * * *'\n  workflow_dispatch:\njobs:\n  run:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v5\n        with:\n          python-version: '3.11'\n      - run: pip install aiogram aiohttp\n      - name: Run bot\n        env:\n          BOT_TOKEN: \${{ secrets.BOT_TOKEN }}\n        run: python bot.py\n`;
         const requirements = 'aiogram>=3.0,<4.0\naiohttp\n';
 
         const files = [
@@ -616,20 +559,42 @@ jobs:
         return nacl.util.encodeBase64(encryptedBytes);
     }
 
+    // ================= Update Code =================
+    let currentUpdateBotId = null;
+
+    function openUpdateCodeModal(botId) {
+        const user = getCurrentUser(); if(!user?.bots[botId]) return;
+        currentUpdateBotId = botId;
+        document.getElementById('updateCodeModal').classList.remove('hidden');
+        setTimeout(() => { initUpdateEditor(user.bots[botId].code); }, 50);
+    }
+
+    function closeUpdateCodeModal() {
+        document.getElementById('updateCodeModal').classList.add('hidden');
+        destroyUpdateEditor();
+        currentUpdateBotId = null;
+    }
+
+    function handleUpdateCode(e) {
+        e.preventDefault();
+        const user = getCurrentUser(); if(!user||!currentUpdateBotId) return;
+        const newCode = updateEditor ? updateEditor.getValue() : '';
+        if(!newCode) { showToast('Код не может быть пустым','error'); return; }
+        if(!newCode.includes('BOT_TOKEN = os.getenv("BOT_TOKEN")')) {
+            showToast('В коде отсутствует BOT_TOKEN = os.getenv("BOT_TOKEN"). Добавьте эту строку.','error');
+            return;
+        }
+        user.bots[currentUpdateBotId].code = newCode;
+        saveState();
+        closeUpdateCodeModal();
+        renderDashboard();
+        showToast('Код бота обновлён!','success');
+    }
+
     // ================= Управление ботами =================
-    function stopBot(botId) {
-        const user = getCurrentUser(); if(!user?.bots[botId]) return;
-        user.bots[botId].status = 'stopped'; saveState(); renderDashboard(); showToast('Бот остановлен','info');
-    }
-    function startBot(botId) {
-        const user = getCurrentUser(); if(!user?.bots[botId]) return;
-        user.bots[botId].status = 'running'; saveState(); renderDashboard(); showToast('Бот запущен','success');
-    }
-    function deleteBot(botId) {
-        if(!confirm('Удалить бота безвозвратно?')) return;
-        const user = getCurrentUser(); if(!user?.bots[botId]) return;
-        delete user.bots[botId]; saveState(); renderDashboard(); showToast('Бот удалён','info');
-    }
+    function stopBot(botId) { const user = getCurrentUser(); if(!user?.bots[botId]) return; user.bots[botId].status = 'stopped'; saveState(); renderDashboard(); showToast('Бот остановлен','info'); }
+    function startBot(botId) { const user = getCurrentUser(); if(!user?.bots[botId]) return; user.bots[botId].status = 'running'; saveState(); renderDashboard(); showToast('Бот запущен','success'); }
+    function deleteBot(botId) { if(!confirm('Удалить бота безвозвратно?')) return; const user = getCurrentUser(); if(!user?.bots[botId]) return; delete user.bots[botId]; saveState(); renderDashboard(); showToast('Бот удалён','info'); }
 
     function showToast(message, type='info') {
         const container = document.getElementById('toastContainer');
@@ -637,7 +602,7 @@ jobs:
         toast.className = `toast toast-${type}`;
         toast.textContent = message;
         container.appendChild(toast);
-        setTimeout(() => { toast.style.opacity='0'; toast.style.transition='0.3s'; setTimeout(()=>toast.remove(),300); },3000);
+        setTimeout(() => { toast.style.opacity='0'; toast.style.transition='0.3s'; setTimeout(()=>toast.remove(),300); }, 4000);
     }
 
     // Закрытие модалок по клику на оверлей
